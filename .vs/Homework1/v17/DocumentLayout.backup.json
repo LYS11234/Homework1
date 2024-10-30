@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\Homework1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|d:\\unityprojects\\homework1\\assets\\01_scripts\\astaralgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|d:\\unityprojects\\homework1\\assets\\01_scripts\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\grid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|D:\\UnityProjects\\Homework1\\assets\\01_scripts\\astaralgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\astaralgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|d:\\unityprojects\\homework1\\assets\\01_scripts\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|D:\\UnityProjects\\Homework1\\assets\\01_scripts\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0497B66-7F03-7A9B-69D0-15E9E55F0C6A}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +22,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Node.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\Node.cs",
+              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Node.cs",
+              "ToolTip": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\Node.cs",
+              "RelativeToolTip": "Assets\\01_Scripts\\Node.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:09:08.69Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Grid.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\Grid.cs",
+              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Grid.cs",
+              "ToolTip": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\Grid.cs",
+              "RelativeToolTip": "Assets\\01_Scripts\\Grid.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:42:00.924Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AStarAlgorithm.cs",
               "DocumentMoniker": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\AStarAlgorithm.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\AStarAlgorithm.cs",
@@ -31,20 +62,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T14:34:25.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Node.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\Node.cs",
-              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Node.cs",
-              "ToolTip": "D:\\UnityProjects\\Homework1\\Assets\\01_Scripts\\Node.cs",
-              "RelativeToolTip": "Assets\\01_Scripts\\Node.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T14:09:08.69Z",
-              "EditorCaption": ""
+              "IsPinned": true
             }
           ]
         }
