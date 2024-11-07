@@ -20,10 +20,12 @@ public class Grid : MonoBehaviour
 
     [SerializeField]
     private Sprite sprite;
-
+    [SerializeField]
     private int movementCount;
     [SerializeField]
     private Camera cam;
+
+    private float currentTime;
 
     private void Start()
     {
@@ -36,7 +38,9 @@ public class Grid : MonoBehaviour
 
     private void Update()
     {
+
         CheckNearNodes();
+
     }
 
     public void CreateGrid() //그리드 생성
@@ -132,7 +136,7 @@ public class Grid : MonoBehaviour
 
     private void AStarAlgorithm()
     {
-        float length = 99;
+        float length = int.MaxValue;
         int nextNode = 0;
 
         
@@ -142,20 +146,25 @@ public class Grid : MonoBehaviour
             {
                 continue;
             }
+            if (path.Contains(emptyNodes[i]))
+            {
+                continue;
+            }
             if(length > (emptyNodes[i].transform.position - Grids[GridSize.x - 1, GridSize.y - 1].transform.position).magnitude)
             {
                 length = (emptyNodes[i].transform.position - Grids[GridSize.x - 1, GridSize.y - 1].transform.position).magnitude;
                 nextNode = i;
             }
         }
-        if (path.Contains(emptyNodes[nextNode]))
+        if(length >= int.MaxValue)
         {
-            noWay.Add(emptyNodes[nextNode]);
-            path.Remove(emptyNodes[nextNode]);
-            emptyNodes[nextNode].GetComponent<SpriteRenderer>().color = Color.gray;
             movementCount--;
+            noWay.Add(path[movementCount + 1]);
             
+            path[movementCount + 1].GetComponent<SpriteRenderer>().color = Color.gray;
+            path.Remove(path[movementCount + 1]);
         }
+
         else
         {
             path.Add(emptyNodes[nextNode]);
