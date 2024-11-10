@@ -26,6 +26,7 @@ public class Grid : MonoBehaviour
     private Camera cam;
 
     private float currentTime;
+    private bool isStart;
 
     private void Start()
     {
@@ -38,9 +39,10 @@ public class Grid : MonoBehaviour
 
     private void Update()
     {
-
-        CheckNearNodes();
-
+        if (isStart)
+        {
+            CheckNearNodes();
+        }
     }
 
     public void CreateGrid() //그리드 생성
@@ -196,5 +198,30 @@ public class Grid : MonoBehaviour
 
             }
         }
+    }
+
+    public void StartButton()
+    {
+        isStart = true;
+    }
+
+    public void ReRoll()
+    {
+        isStart = false;
+        path.Clear();
+        for (int x = 0; x < GridSize.x; x++)
+        {
+            for (int y = 0; y < GridSize.y; y++)
+            {
+                Destroy(Grids[x, y]);
+            }
+        }
+        movementCount = 0;
+        emptyNodes.Clear();
+        blockNodes.Clear();
+        noWay.Clear();
+        Grids = null;
+        CreateGrid();
+        path.Add(Grids[0, 0]);
     }
 }
